@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Photos</title>
+    <link href="/styles/main.css" rel="stylesheet" type="text/css">
+    <script src="uploader.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/upload">Upload Pictures</a>
+    </nav>
+    <main>
+      <% pictures.each do |pic| %>
+        <figure>
+          <img src="/<%= pic[:src] %>">
+          <figcaption>[names]<br>[place]<br><%= pic[:metadata].date_time.strftime('%d-%b-%Y') %></figcaption>
+        </figure>
+      <% end %>
+    </main>
+  </body>
+</html>
