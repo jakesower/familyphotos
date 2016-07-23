@@ -1,2 +1,6 @@
 /public/uploads/*
 !/public/uploads/.keep
+/tmp
+/log
+/config/deploy/
+/config/deploy.rb

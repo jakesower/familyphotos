@@ -12,7 +12,7 @@
       <% pictures.each do |pic| %>
         <figure>
           <img src="/<%= pic[:src] %>">
-          <figcaption>[names]<br>[place]<br><%= pic[:metadata].date_time.strftime('%d-%b-%Y') %></figcaption>
+          <figcaption>[names]<br>[location]<br><%= pic[:metadata].date_time.strftime('%d-%b-%Y') %></figcaption>
         </figure>
       <% end %>
     </main>
